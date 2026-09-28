@@ -1,0 +1,49 @@
+Descripción general de la tarea:
+
+
+Crear contenido web a  través de HTML 5, personalizando el diseño de la página con CSS
+
+La web debe contener estructura con elementos:
+
+<header>, <nav>, <main>, <section>, <article>, <footer>
+
+La web debe contener los siguientes elementos visuales:
+
+- Incluya hipervínculos funcionales, imágenes correctamente insertadas, botones operativos, 
+videos embebidos, formularios interactivos, y un footer informativo. 
+
+- Las páginas estén interconectadas a través de hipervínculos, permitiendo la navegación entre ellas de manera 
+coherente y fluida.
+
+- Utilicen una hoja de estilos CSS externa que aplique estilos personalizados de manera 
+consistente. 
+
+La web debe contener los siguientes puntos respecto a experiencia de usuario:
+
+- Asegúrate de que los formularios implementen validaciones que prevengan el envío de datos incorrectos o incompletos. 
+
+- Verifica que los mensajes de error y sugerencias sean claros, específicos y se muestren en el contexto adecuado del formulario. 
+
+Las operaciones realizadas en el proyecto deben ser respaldadas en GitHub, dentro del respaldo se considerará lo siguiente:
+
+- Revisa que los commits en el repositorio tengan mensajes claros y descriptivos que reflejen los cambios realizados. 
+
+- Confirma que las tareas están distribuidas entre los miembros del equipo y que los cambios se integran efectivamente
+ en el proyecto.
+ 
+Documentación del proyecto:
+
+- El equipo deberá identificar y documentar las necesidades y expectativas que el proyecto debe cumplir. Esto 
+puede incluir funcionalidades, restricciones, y requisitos técnicos. 
+
+- Se deben especificar las herramientas y tecnologías que se utilizarán para desarrollar el proyecto. Esto puede incluir software, 
+hardware, plataformas, lenguajes de programación, etc. 
+
+- Aquí se incluirán las ideas y enfoques para abordar el proyecto, cómo se planea cumplir con los requerimientos, y 
+cualquier otra estrategia relevante.  
+
+
+Entregables: 
+• Enlace GitHub público del proyecto frontend.   
+• Proyecto frontend comprimido.  
+• Documento ERS (propuesta previa. Versión 1) 
