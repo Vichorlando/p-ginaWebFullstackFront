@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="609A492F-BA67-B66E-D4D7-9FA5FFF2A328" name="REGISTRO_ARCHIVADO">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>833BFF12-E4C2-1BE3-F29F-18583F4AAAE6</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_registro_archivado" id="609309F5-1741-4B84-E840-98852BB1782C">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>794EF089-FE46-3504-39B2-4BF5D44E865B</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_expediente" id="BC1104B8-262C-5410-B705-707F672259BC">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>B05D9C20-C94C-CEA0-672E-7A53D0ACE303</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_archivado" id="E454117F-4C39-C3E4-6C88-B14984D2E731">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>8C5F7F68-961F-C6A3-4596-2466004CF783</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pnombre" id="018CD761-6501-0BD7-B831-4D0A2EA90095">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>662F03CA-D4A9-3E6E-A3AD-EA2FCFC76AE9</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="papellido" id="27A3094D-FC50-6165-541D-C4A6D466B027">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>3989C4CC-7440-FFA4-5A53-FEC7A4B5A69C</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_expediente" id="4385DE81-AF69-9AFA-8D59-5AA23DFB490C">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>BFADEA93-458D-DBDE-591E-C166A9D15198</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE4C0F78-032F-9B62-DD2D-6B797EF2B6E5" referredColumn="316316D3-BD56-FE57-DBCF-A39BBA79D860"/>
+</associations>
+</Column>
+<Column name="folio_ficha" id="7BA53ACD-9C93-83CD-79B6-39D937C017D4">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>E9347B59-F0B1-DE4C-2D34-4F8F55C9D29F</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB14CDCF-0B06-F56D-9A81-DB8B589F1578" referredColumn="65878D8D-9AE9-DA08-EC1D-FEF2B96EC79A"/>
+</associations>
+</Column>
+<Column name="id_administrativo" id="4743599A-200E-FB77-ADBF-ACF50AF07F32">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>18541690-E812-E384-2389-53F59CFDB164</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="018D8846-2762-D718-4062-DAF40063CA80" referredColumn="BD4571D5-8D85-4965-BBB9-D0EBE83EE761"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B3AAB1B4-8D5A-10A5-EF0C-ED8EF5C06217" name="REGISTRO_ARCHIVADO_PK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>7D9B7D53-FAB3-C134-B64B-1C528C4A338C</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="609309F5-1741-4B84-E840-98852BB1782C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F31DE66A-14C1-1C1E-B507-64624669923D" name="REGISTRO_ARCHIVADO__IDX">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>FF2B8913-F79A-ABD7-D46C-52B5728F1B17</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4385DE81-AF69-9AFA-8D59-5AA23DFB490C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C8C7A9A-CA50-C6FA-505D-FE6F7B830038" name="REGISTRO_ARCHIVADO_ADMINISTRATIVO_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>A6422B1B-3841-C7E8-1E2F-98996C80510F</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4743599A-200E-FB77-ADBF-ACF50AF07F32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5AE825EF-21D3-EEA6-DE22-4C72159A9CAA" name="REGISTRO_ARCHIVADO_FICHA_CLINICA_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>E7F97CC4-9351-5E6A-8150-2BA50C3E6647</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BA53ACD-9C93-83CD-79B6-39D937C017D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43F96444-3DCB-1117-AB8F-FA74815F3D9D" name="REGISTRO_ARCHIVADO_EXPEDIENTE_HOSPITALIZACION_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>FF2B8913-F79A-ABD7-D46C-52B5728F1B17</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4385DE81-AF69-9AFA-8D59-5AA23DFB490C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,28 @@
+/* Estilos específicos para páginas no refactorizadas (Blogs, Nosotros) */
+
+/* ---------- Blogs ---------- */
+.titulo-central { text-align: center; margin: 2rem 0; }
+.recuadro {
+    display: flex; gap: 1.5rem; align-items: center;
+    max-width: 900px; margin: 0 auto 1.5rem; padding: 1rem;
+    background: #fff; border-radius: 0.5rem; box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+}
+.imagen-pequena { flex: 0 0 160px; }
+.imagen-pequena img { width: 100%; height: 120px; object-fit: cover; border-radius: 0.375rem; display: block; }
+.recuadro .contenido h2 { margin-top: 0; }
+.recuadro .contenido h2 a { color: inherit; text-decoration: none; }
+.recuadro .contenido h2 a:hover { color: var(--bs-primary); }
+
+.flecha-regreso { display: inline-block; margin: 1rem 2rem; font-size: 2rem; text-decoration: none; }
+.noticia { max-width: 800px; margin: 1rem auto 2rem; padding: 0 1rem; }
+.imagen-noticia img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 0.5rem; display: block; }
+.contenido-noticia { background: #fff; padding: 1.5rem; border-radius: 0.5rem; margin-top: 1rem; box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075); }
+.contenido-noticia h1 { margin-top: 0; }
+
+/* ---------- Nosotros ---------- */
+.description-container {
+    max-width: 800px; margin: 2rem auto; padding: 2rem;
+    background: #fff; border-radius: 0.75rem; box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,.1);
+}
+.developer-names { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
+.developer-names span { background: var(--bs-primary-bg-subtle); color: var(--bs-primary-text-emphasis); padding: .5rem 1rem; border-radius: 999px; font-weight: 500; }

@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FAFEECA4-0F13-A9D9-9624-D99B925BB125" name="PRESTAMO">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 17:23:13 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_administrativo" id="B28DA8DE-FFBE-F3B2-D809-580E2A67A613">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:41:43 UTC</createdTime>
+<generatorID>6A661410-719B-43DE-8F82-7587201219F2</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<referedAttribute>8E68DA0A-A154-0920-8711-E0B358986C17</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_prestamo" id="B5EFD455-1AEC-6E18-5CF4-972AFFC4A155">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:43:11 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="num_prestamo" id="41A8FB11-1099-61EA-BB24-869C6F316B05">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:43:16 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_solicitud" id="CBD82C1B-2AD0-B0B1-3F1E-CF1FC9CD7757">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:43:51 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_prestamo_ficha" id="4EF28208-6A42-8D3B-3CED-E7EB57A6C503">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:43:58 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pnombre" id="478197BD-E401-48A5-5B30-312925ED4C68">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:44:20 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="appaterno" id="0DDDBDFB-58B6-E4A7-EAF2-02C41DBA166A">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:44:31 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="folio_ficha" id="444277CD-C161-2756-5FD4-BD44FCAB5354">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:47:10 UTC</createdTime>
+<generatorID>1DA4CA2C-7BAB-78EE-3CB2-F01F3E76AF9F</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<referedAttribute>FE8132F7-6EE2-12BB-E6A0-7243DEFF6A5C</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D220DD91-3BA3-C057-6435-2DC8EBFC2C0C" name="PRESTAMO PK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:41:40 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B28DA8DE-FFBE-F3B2-D809-580E2A67A613</attributeRef>
+<attributeRef>B5EFD455-1AEC-6E18-5CF4-972AFFC4A155</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

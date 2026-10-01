@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9986C5F0-CA33-93DF-3F82-D0B14EAD1F8A" name="AUDITORIA">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 17:23:22 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_administrativo" id="3DB18FDC-0648-2B5C-8701-C3CDA0DC51E3">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:41:43 UTC</createdTime>
+<generatorID>85C7D9ED-79FE-09B3-9B42-637AD5448DE3</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<referedAttribute>8E68DA0A-A154-0920-8711-E0B358986C17</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_auditoria" id="12AE302F-A01B-1ADE-1115-96BB3F026294">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:45:03 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="num_uditoria" id="4025F97B-4FA7-580E-B620-0CE38C370A38">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:45:08 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_auditoria" id="10F47B77-5E06-318E-B049-44746834BFFE">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:45:15 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pnombre" id="6F782D16-3456-B75D-1502-6A1A45142FA4">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:45:22 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="snombre" id="E6DF03A6-8909-8B55-CDD8-BC72DA9C46BC">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:45:51 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7C2A9962-D6D2-02BF-3331-A5F665181006" name="AUDITORIA PK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:41:40 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>12AE302F-A01B-1ADE-1115-96BB3F026294</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

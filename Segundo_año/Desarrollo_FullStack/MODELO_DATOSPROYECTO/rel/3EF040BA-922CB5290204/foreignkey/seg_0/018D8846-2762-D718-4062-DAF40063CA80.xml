@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="018D8846-2762-D718-4062-DAF40063CA80" containerWithKeyObject="609A492F-BA67-B66E-D4D7-9FA5FFF2A328" localFKIndex="6C8C7A9A-CA50-C6FA-505D-FE6F7B830038" name="REGISTRO_ARCHIVADO_ADMINISTRATIVO_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>A6422B1B-3841-C7E8-1E2F-98996C80510F</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<referredTableLongName>ADMINISTRATIVO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>52E2278F-9967-C71E-1C87-33D55200D786</referredTableID>
+<keyObject>BAE78F68-B221-CDDD-32B4-2594C4D747B4</keyObject>
+<referredKeyID>BAE78F68-B221-CDDD-32B4-2594C4D747B4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_administrativo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

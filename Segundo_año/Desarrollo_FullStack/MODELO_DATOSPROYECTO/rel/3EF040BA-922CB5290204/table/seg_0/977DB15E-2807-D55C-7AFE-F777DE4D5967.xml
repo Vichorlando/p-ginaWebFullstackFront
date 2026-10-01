@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="977DB15E-2807-D55C-7AFE-F777DE4D5967" name="FICHA_CLINICA">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>785F6111-DCB2-ED13-BC9B-CB187E782770</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="folio_ficha" id="65878D8D-9AE9-DA08-EC1D-FEF2B96EC79A">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>FE8132F7-6EE2-12BB-E6A0-7243DEFF6A5C</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_paciente" id="F3D1D4D3-F838-BC91-446B-01E560F9AE9C">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>03B57F05-1DA6-AEAB-734F-65B81C03260A</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>13</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D50E2284-3A90-8677-C258-B8C109E916C9" referredColumn="444B654F-5809-719E-957E-06EA84CAFC39"/>
+</associations>
+</Column>
+<Column name="fecha_creacion" id="C58AF9AA-FB1B-F51B-E8F9-C1A2D512D10E">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>7B8ABECA-EC1D-77A2-B91B-EAC583016E75</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_estande" id="69737EDA-FD1A-A3A2-6CF0-0B471700B35B">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>0B67ECF5-888F-48D5-6AFB-59A782646E3E</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B1B885A-291F-A6E1-8173-19CC59F87A81" referredColumn="5429294D-C157-D8B8-6141-97C486AE9855"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D0DF7808-2F20-66FE-AD72-0355C8F8AEAB" name="FICHA_CLINICA_PK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>BA6DF50B-163E-FF05-58EA-E15BE699578F</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65878D8D-9AE9-DA08-EC1D-FEF2B96EC79A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3E961E4-CBB4-ABB0-3D1F-2762E565D2EE" name="FICHA_CLINICA__IDX">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>00C48E89-E0EB-446D-D747-5A41A270EF6D</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="F3D1D4D3-F838-BC91-446B-01E560F9AE9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A969119-04E3-B88A-D17D-D7D47F4BE445" name="FICHA_CLINICA_PACIENTE_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>00C48E89-E0EB-446D-D747-5A41A270EF6D</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3D1D4D3-F838-BC91-446B-01E560F9AE9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3764EE89-3A54-7588-29BB-38809F2AF821" name="FICHA_CLINICA_ESTANTE_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>4C4CB455-20E3-1D58-ED84-02DB4D98BB06</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69737EDA-FD1A-A3A2-6CF0-0B471700B35B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

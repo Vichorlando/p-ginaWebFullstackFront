@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="833BFF12-E4C2-1BE3-F29F-18583F4AAAE6" name="REGISTRO_ARCHIVADO">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:08:03 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_registro_archivado" id="794EF089-FE46-3504-39B2-4BF5D44E865B">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:54:59 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="folio_ficha" id="F39EFCC2-EBE9-B683-C551-D84D3197798D">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:08:23 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_expediente" id="B05D9C20-C94C-CEA0-672E-7A53D0ACE303">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:08:35 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_archivado" id="8C5F7F68-961F-C6A3-4596-2466004CF783">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:08:45 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_administrativo" id="EFD1E538-4CC7-8BBD-B4E0-073570EB5ABE">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:08:58 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pnombre" id="662F03CA-D4A9-3E6E-A3AD-EA2FCFC76AE9">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:09:14 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="papellido" id="3989C4CC-7440-FFA4-5A53-FEC7A4B5A69C">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:09:30 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_expediente" id="BFADEA93-458D-DBDE-591E-C166A9D15198">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:12:56 UTC</createdTime>
+<generatorID>FF2B8913-F79A-ABD7-D46C-52B5728F1B17</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<referedAttribute>C863845B-6D91-B393-8346-50D59F5D0065</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="folio_ficha1" id="E9347B59-F0B1-DE4C-2D34-4F8F55C9D29F">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:23:44 UTC</createdTime>
+<generatorID>E7F97CC4-9351-5E6A-8150-2BA50C3E6647</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<referedAttribute>FE8132F7-6EE2-12BB-E6A0-7243DEFF6A5C</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_administrativo1" id="18541690-E812-E384-2389-53F59CFDB164">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:41:43 UTC</createdTime>
+<generatorID>A6422B1B-3841-C7E8-1E2F-98996C80510F</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<referedAttribute>8E68DA0A-A154-0920-8711-E0B358986C17</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7D9B7D53-FAB3-C134-B64B-1C528C4A338C" name="REGISTRO_ARCHIVADO PK">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:08:34 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E9347B59-F0B1-DE4C-2D34-4F8F55C9D29F</attributeRef>
+<attributeRef>18541690-E812-E384-2389-53F59CFDB164</attributeRef>
+<attributeRef>794EF089-FE46-3504-39B2-4BF5D44E865B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

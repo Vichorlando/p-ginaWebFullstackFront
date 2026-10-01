@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="71D278C0-A00C-9DAD-1F69-07CE37FE09F8" containerWithKeyObject="14EADC1E-559C-64A7-B962-5E08363E5934" localFKIndex="0A4A70B4-4D1D-7A9E-FB48-7DE799D0B729" name="EXPEDIENTE_HOSPITALIZACION_REGISTRO_ARCHIVADO_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>FF2B8913-F79A-ABD7-D46C-52B5728F1B17</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<referredTableLongName>REGISTRO_ARCHIVADO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>609A492F-BA67-B66E-D4D7-9FA5FFF2A328</referredTableID>
+<keyObject>B3AAB1B4-8D5A-10A5-EF0C-ED8EF5C06217</keyObject>
+<referredKeyID>B3AAB1B4-8D5A-10A5-EF0C-ED8EF5C06217</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_registro_archivado</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

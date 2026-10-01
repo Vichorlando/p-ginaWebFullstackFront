@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="527D134E-8405-CDD3-E50B-24C813A14B0E" name="AUDITORIA">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>9986C5F0-CA33-93DF-3F82-D0B14EAD1F8A</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_auditoria" id="E0BC3B1F-AD6A-8F5D-C4E8-C74C78586EB6">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>12AE302F-A01B-1ADE-1115-96BB3F026294</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num_uditoria" id="F473F7EE-145B-0219-D6D2-F72B84419CA3">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>4025F97B-4FA7-580E-B620-0CE38C370A38</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_auditoria" id="468AFA2B-310F-101A-5A9A-A4C26A6BA617">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>10F47B77-5E06-318E-B049-44746834BFFE</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pnombre" id="021D244E-EBA3-8427-918F-B81BABCFCE1C">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>6F782D16-3456-B75D-1502-6A1A45142FA4</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="snombre" id="B5E9061F-8A0F-DAFB-015E-D6F75378825E">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>E6DF03A6-8909-8B55-CDD8-BC72DA9C46BC</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_administrativo" id="D8B726C5-44B7-D2DA-2572-DF3FC2B70B7B">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>3DB18FDC-0648-2B5C-8701-C3CDA0DC51E3</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8D593B42-5B54-8A91-F323-8ACDC1088E3F" referredColumn="BD4571D5-8D85-4965-BBB9-D0EBE83EE761"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F8304641-956B-3407-C2D8-D9AE93DC0739" name="AUDITORIA_PK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>7C2A9962-D6D2-02BF-3331-A5F665181006</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0BC3B1F-AD6A-8F5D-C4E8-C74C78586EB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DEBF9C6-5B01-4D38-7D70-6FF3A61BCDFF" name="AUDITORIA_ADMINISTRATIVO_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>85C7D9ED-79FE-09B3-9B42-637AD5448DE3</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8B726C5-44B7-D2DA-2572-DF3FC2B70B7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

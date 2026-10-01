@@ -1,0 +1,63 @@
+
+:root {
+    /* Color Palette: Natural & Elegant */
+    --sage-green: #8A9A5B;
+    --dusty-rose: #C08081;
+    --terracotta: #B97C5B;
+    --off-white: #F8F6F4;
+    --dark-charcoal: #36454F;
+    --soft-gold: #B8860B;
+
+    /* Typography */
+    --font-family-serif: 'Playfair Display', serif;
+    --font-family-sans-serif: 'Montserrat', sans-serif;
+
+    /* Bootstrap Variable Overrides */
+    --bs-primary: var(--sage-green);
+    --bs-secondary: var(--dusty-rose);
+    --bs-body-color: var(--dark-charcoal);
+    --bs-body-bg: var(--off-white);
+    --bs-font-sans-serif: var(--font-family-sans-serif);
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-serif);
+    color: var(--dark-charcoal);
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background-color: #7a8a4f;
+    border-color: #7a8a4f;
+}
+
+.btn-secondary {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+}
+
+.btn-secondary:hover {
+    background-color: #b07071;
+    border-color: #b07071;
+}
+
+.card {
+    border: 1px solid #eee;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--sage-green);
+    box-shadow: 0 0 0 0.25rem rgba(138, 154, 91, 0.25);
+}
+

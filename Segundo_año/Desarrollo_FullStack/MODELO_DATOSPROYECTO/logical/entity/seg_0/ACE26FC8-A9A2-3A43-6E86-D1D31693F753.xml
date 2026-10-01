@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ACE26FC8-A9A2-3A43-6E86-D1D31693F753" name="EXPEDIENTE_HOSPITALIZACION">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 22:52:04 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_expediente" id="C863845B-6D91-B393-8346-50D59F5D0065">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 22:52:48 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_expediente" id="B5B37BB2-0F96-23D5-32B3-2234F1A77680">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 22:54:20 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_paciente" id="6AD505AE-EEF2-E6E0-B1FF-B4755E516593">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 22:54:50 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="digitalizacion" id="F28BA238-7622-3A8A-36F3-284C2CBF8BF5">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 22:56:36 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="folio_ficha1" id="4CF18E90-1F36-AB96-BB1B-028F331613F7">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:23:44 UTC</createdTime>
+<generatorID>FF2B8913-F79A-ABD7-D46C-52B5728F1B17</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<referedAttribute>E9347B59-F0B1-DE4C-2D34-4F8F55C9D29F</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_reserva" id="8F50B613-BDE7-A443-03E8-93E1C12E7948">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-03 02:51:17 UTC</createdTime>
+<generatorID>0A8F7271-D902-DFEC-9CEC-063652202807</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<referedAttribute>4E95F8D2-AAA1-E1FA-A90A-6513B0918727</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_administrativo1" id="E7A7B95D-6B78-C08E-E279-1AADE1A61476">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:41:43 UTC</createdTime>
+<generatorID>FF2B8913-F79A-ABD7-D46C-52B5728F1B17</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<referedAttribute>18541690-E812-E384-2389-53F59CFDB164</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_registro_archivado" id="1405492C-62C1-2405-7D65-0E3B9AA92E5E">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:55:13 UTC</createdTime>
+<generatorID>FF2B8913-F79A-ABD7-D46C-52B5728F1B17</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<referedAttribute>794EF089-FE46-3504-39B2-4BF5D44E865B</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A9E5BB9D-49C7-EB20-113F-FB609EB7C22B" name="EXPEDIENTE_HOSPITALIZACION PK">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 22:54:16 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C863845B-6D91-B393-8346-50D59F5D0065</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

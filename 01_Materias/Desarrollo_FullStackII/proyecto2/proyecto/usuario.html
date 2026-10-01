@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de usuarios | KatEye</title>
+        <link rel="stylesheet" href="css/admin.css">
+    <!-- Google Fonts: Playfair Display & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom Design Tokens -->
+    <link rel="stylesheet" href="css/design-tokens.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="admin">
+        <div class="layout-admin">
+
+        <aside id="sidebar" class="sidebar" data-activo="usuarios"></aside>
+
+        <main class="contenido">
+            <header class="contenido__encabezado">
+                <div>
+                    <h1>Usuarios</h1>
+                    <p>Lista, busca y edita las cuentas de la tienda.</p>
+                </div>
+                <!-- Hipervínculo a la página para agregar -->
+                <a class="btn btn-primary" href="usuarioForm.html">+ Agregar usuario</a>
+            </header>
+
+            <div class="barra-herramientas">
+                <div class="buscador">
+                    <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                        stroke-linecap="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7" />
+                        <path d="M21 21l-4.3-4.3" />
+                    </svg>
+                    <input type="search" id="buscar" class="form-control" placeholder="Buscar por nombre, correo o región"
+                        aria-label="Buscar usuarios">
+                </div>
+                <span class="contador-resultados" id="contador" aria-live="polite"></span>
+            </div>
+
+            <div class="tabla-envoltorio">
+                <table class="table table-hover align-middle">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Región</th>
+                            <th>Teléfono</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-usuarios"></tbody>
+                </table>
+                <p class="vacio" id="sin-resultados" hidden>No hay usuarios que coincidan con la búsqueda.</p>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="js/admin.js"></script>
+    <script>
+        /* Datos de ejemplo: reemplazar por la fuente real (localStorage o API) */
+        let USUARIOS = [
+            { id: 1, nombre: "María González", correo: "maria.gonzalez@gmail.com", region: "Metropolitana de Santiago", telefono: "+56 9 1234 5678" },
+            { id: 2, nombre: "Camila Rojas", correo: "camila.rojas@duoc.cl", region: "Valparaíso", telefono: "+56 9 2345 6789" },
+            { id: 3, nombre: "Javiera Soto", correo: "javiera.soto@gmail.com", region: "Biobío", telefono: "" },
+            { id: 4, nombre: "Valentina Muñoz", correo: "v.munoz@profesor.duoc.cl", region: "Metropolitana de Santiago", telefono: "+56 9 4567 8901" },
+            { id: 5, nombre: "Francisca Pérez", correo: "francisca.perez@gmail.com", region: "Coquimbo", telefono: "+56 9 5678 9012" }
+        ];
+
+        const tbody = document.getElementById("tabla-usuarios");
+        const buscador = document.getElementById("buscar");
+        const sinResultados = document.getElementById("sin-resultados");
+        const contador = document.getElementById("contador");
+
+        function renderUsuarios() {
+            const q = buscador.value.trim().toLowerCase();
+            const lista = USUARIOS.filter(u =>
+                [u.nombre, u.correo, u.region].some(c => c.toLowerCase().includes(q))
+            );
+
+            tbody.innerHTML = lista.map(u => `
+                <tr>
+                    <td>${u.id}</td>
+                    <td>${escapar(u.nombre)}</td>
+                    <td>${escapar(u.correo)}</td>
+                    <td><span class="etiqueta">${escapar(u.region)}</span></td>
+                    <td>${escapar(u.telefono) || "—"}</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <!-- Hipervínculo a la página para editar -->
+                            <a class="btn btn-outline-secondary" href="usuarioForm.html?id=${u.id}">Editar</a>
+                            <button class="btn btn-outline-danger" data-eliminar="${u.id}">Eliminar</button>
+                        </div>
+                    </td>
+                </tr>
+            `).join("");
+
+            sinResultados.hidden = lista.length > 0;
+            contador.textContent = `${lista.length} de ${USUARIOS.length} usuarios`;
+        }
+
+        buscador.addEventListener("input", renderUsuarios);
+
+        tbody.addEventListener("click", e => {
+            const btn = e.target.closest("[data-eliminar]");
+            if (!btn) return;
+            const id = Number(btn.dataset.eliminar);
+            const u = USUARIOS.find(x => x.id === id);
+            if (u && confirm(`¿Eliminar a ${u.nombre}?`)) {
+                USUARIOS = USUARIOS.filter(x => x.id !== id);
+                renderUsuarios();
+            }
+        });
+
+        renderUsuarios();
+    </script>
+</body>
+
+</html>

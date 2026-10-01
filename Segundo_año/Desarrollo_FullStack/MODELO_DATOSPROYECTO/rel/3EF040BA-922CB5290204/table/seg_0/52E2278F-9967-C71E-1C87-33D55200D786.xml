@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="52E2278F-9967-C71E-1C87-33D55200D786" name="ADMINISTRATIVO">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>B0703EB0-BC41-3F2F-FEC4-9638122A6550</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_administrativo" id="BD4571D5-8D85-4965-BBB9-D0EBE83EE761">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>8E68DA0A-A154-0920-8711-E0B358986C17</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut" id="48F03A58-8C08-64BF-DA45-BF6A58E70C79">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>6E532A1C-74B2-5FCB-365F-2E29163618E5</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dv" id="07FE840E-27BF-9908-603C-A74257AC6FE4">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>7E80E346-D79E-2C3E-D692-23806D009D3D</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pnombre" id="C215DA25-727C-5819-E8B6-9C9DA0FC2976">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>E1C40518-01B3-0873-E178-9C7EB6BC7FE2</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="snombre" id="F44889E1-D546-54B1-A3C1-7727E1A44467">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>42CE24C7-8196-94D1-921D-80CF0C5E9D6E</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="appaterno" id="4AFFA912-45ED-4EBD-3E73-D94D1B81C685">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>A502EF45-2162-EA49-BCE7-793920FA6D91</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apmaterno" id="CFABD944-8FBA-BC16-D1D4-B64E313DCAE2">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>CD69C470-D346-56A3-C7DE-A56CD79BC18A</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nac" id="90E57AFB-0EA8-4516-57EC-A3BC9FF0DC10">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>DED00C66-0EB3-BECD-50A6-9D98063D5B52</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_contrato" id="44403B7B-C80D-B41B-3BDB-8A477C36B088">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>1BC53782-FA8F-9288-18B1-A360F451D317</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="F5CF2D27-0E45-11D8-85D2-112EC4D2022F">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>734749DB-ADD7-1E9D-65F1-5E1A5F5D9977</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cargo" id="47ECF8FA-D22B-1E02-65A9-BE3AE858B810">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>BE84FD74-58FF-8727-65E0-446389019190</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BAE78F68-B221-CDDD-32B4-2594C4D747B4" name="ADMINISTRATIVO_PK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>D1AEB8B0-937E-E4A3-8280-C67E85C7EA9A</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD4571D5-8D85-4965-BBB9-D0EBE83EE761"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

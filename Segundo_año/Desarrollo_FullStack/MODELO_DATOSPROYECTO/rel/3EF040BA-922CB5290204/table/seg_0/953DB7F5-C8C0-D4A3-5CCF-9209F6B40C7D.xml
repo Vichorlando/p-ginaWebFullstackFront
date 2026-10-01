@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="953DB7F5-C8C0-D4A3-5CCF-9209F6B40C7D" name="ESTANTE">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>77E1D3FD-21EE-73F3-0F7F-0AAA3167263D</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estande" id="5429294D-C157-D8B8-6141-97C486AE9855">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>208C5B1A-A82C-217D-E58B-57761C4D0AF1</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num_estante" id="C76CC1F1-BC4F-A669-1C3F-9898546F17B3">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>20D45101-90E8-E86D-9634-B820E865E5A5</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num_bodega" id="E7BF5FF0-A83C-6EA2-F805-97E80BAF8917">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>078927D2-EE7E-8C7B-F555-14B098E2BBF7</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC981694-2B80-2CE9-6F5F-D31ECFDD8AEC" name="ESTANTE_PK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>B7AE043C-7505-CC7B-2369-C02B836AA8D3</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5429294D-C157-D8B8-6141-97C486AE9855"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

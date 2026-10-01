@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F78F02DF-E21B-BC4E-E001-BD35D613916C" name="PACIENTE">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>F06DA076-49EB-1FFE-34C5-A75EBA897B0E</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_paciente" id="444B654F-5809-719E-957E-06EA84CAFC39">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>FB24C7BF-D09F-7FD7-7A1D-EC0583DF929C</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>13</dataTypeScale>
+<ownDataTypeParameters>,,13</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num_rut" id="4765B8F8-B692-C244-B4CA-D4417448D7C1">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>F1FAF014-FF70-8F63-9884-D85DB3E2082A</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pnombre" id="4ECAC896-A845-D7E5-056B-83FA4553A974">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>BF748E77-7B4E-D0A5-F70A-D663BD2AD7D9</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="snombre" id="77CADB0D-F502-EF0E-C756-9C5E9FDDDB06">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>C2CD4681-6726-E247-74D1-DD3B2815E84F</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="papellido" id="759163DB-7C06-B83A-F9AF-4FD32AB3EA35">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>D6CF0FEA-97E4-D146-7667-7443FF1BCA18</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sapellido" id="FAD24B8C-47FD-4596-B45E-A7F1BD83917C">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>BE07B07D-8DD2-43CF-AE75-C4BF0112BD8B</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_naci" id="D59A7EFF-2CC2-73BD-9FB4-64E5C380EC94">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>B9867ACE-F6D5-2C4B-AE8A-B8B378DFC022</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="99066A44-06EB-36E1-61F3-EF15697FEF24">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>72A3A4FD-8BC5-E27D-FE45-AAE87D0771C8</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nacionalidad" id="988A3A8F-29AC-5B92-B364-B5732E3ECD19">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>A26336D5-E626-C1DF-1A0A-0997146DBA6A</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="folio_ficha" id="D61C74E1-4058-6203-CB09-B52DCDB5F283">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>80F569B6-4A1C-8E93-6C7D-9F8B8796BF71</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B75E691-3CD4-484E-0D23-72C58C245B32" referredColumn="65878D8D-9AE9-DA08-EC1D-FEF2B96EC79A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DBAECD71-F88E-8A12-4BCD-B0403F50907A" name="PACIENTE_PK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>F5F8DCFC-0F81-CB48-7AC5-4539165536D3</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="444B654F-5809-719E-957E-06EA84CAFC39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2637CE68-3431-9B29-B36D-F985D0C0857A" name="PACIENTE__IDX">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>00C48E89-E0EB-446D-D747-5A41A270EF6D</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D61C74E1-4058-6203-CB09-B52DCDB5F283"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA89EE4A-8A44-9A89-3B7D-8E23CE549842" name="PACIENTE_FICHA_CLINICA_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>00C48E89-E0EB-446D-D747-5A41A270EF6D</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D61C74E1-4058-6203-CB09-B52DCDB5F283"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6CC2EE80-F139-5BA3-DFCE-EF06C0D33019" name="RESERVA_ATENCION">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>62DD636F-8CB9-1575-F470-BE649843A861</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_reserva" id="C7B324A3-950D-0A04-AE66-20B883507172">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>4E95F8D2-AAA1-E1FA-A90A-6513B0918727</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora_reservada" id="CCFA07F3-F9E4-D601-708A-561D1217FFF9">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>64B8D180-0ACB-7D59-F3A8-B8B625D63167</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_reservada" id="A8B73513-4B28-07F8-D7B6-6A9E30E35714">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>D745199E-10C3-6FF8-6D35-0ED6B7192BCC</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="especialidad" id="BE375990-3B48-75E7-B0CC-AF1B6DE555EF">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>2F137112-3A9C-6454-9990-6C60287F609D</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="profesional" id="68B541DB-8538-AB2E-3D36-0FAD7ABF8DA6">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>F79AE71D-69E0-4570-F7BF-AEF97E7E8DD7</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_paciente" id="DBD19C61-1DF1-F7FF-BB74-4820C4F7F0E3">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>360DDD69-906C-225A-94F5-EFD0A3D3536A</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>13</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22C55B55-22AF-F3AA-53A7-D6A54246E3F8" referredColumn="444B654F-5809-719E-957E-06EA84CAFC39"/>
+</associations>
+</Column>
+<Column name="id_expediente" id="E5C29616-2323-B75A-9552-842F8B320E32">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>029798F4-509A-6072-C7FE-96B8EFC7C021</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8E4D292-D1CB-6F4A-FFB5-ED7CD54A3EF2" referredColumn="316316D3-BD56-FE57-DBCF-A39BBA79D860"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B7216499-CFB1-2C62-1156-0E3946457A0E" name="RESERVA_ATENCION_PK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>F6CFC3FC-0F3D-729F-4A35-29AF8173CD47</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7B324A3-950D-0A04-AE66-20B883507172"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="091F3E32-0B54-BE17-6ED0-1AA2DCEB74B2" name="RESERVA_ATENCION__IDX">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>0A8F7271-D902-DFEC-9CEC-063652202807</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E5C29616-2323-B75A-9552-842F8B320E32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AE9B72D-E149-8E3C-C8DB-4F7C22A18C1A" name="RESERVA_ATENCION_PACIENTE_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>873A6E82-5956-B9E5-3B01-135EEE03B83E</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBD19C61-1DF1-F7FF-BB74-4820C4F7F0E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE576CA4-4647-599F-82C8-22E2C9075216" name="RESERVA_ATENCION_EXPEDIENTE_HOSPITALIZACION_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>0A8F7271-D902-DFEC-9CEC-063652202807</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5C29616-2323-B75A-9552-842F8B320E32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8D593B42-5B54-8A91-F323-8ACDC1088E3F" containerWithKeyObject="527D134E-8405-CDD3-E50B-24C813A14B0E" localFKIndex="5DEBF9C6-5B01-4D38-7D70-6FF3A61BCDFF" name="AUDITORIA_ADMINISTRATIVO_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>85C7D9ED-79FE-09B3-9B42-637AD5448DE3</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<referredTableLongName>ADMINISTRATIVO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>52E2278F-9967-C71E-1C87-33D55200D786</referredTableID>
+<keyObject>BAE78F68-B221-CDDD-32B4-2594C4D747B4</keyObject>
+<referredKeyID>BAE78F68-B221-CDDD-32B4-2594C4D747B4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_administrativo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

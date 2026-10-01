@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14EADC1E-559C-64A7-B962-5E08363E5934" name="EXPEDIENTE_HOSPITALIZACION">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>ACE26FC8-A9A2-3A43-6E86-D1D31693F753</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_expediente" id="316316D3-BD56-FE57-DBCF-A39BBA79D860">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>C863845B-6D91-B393-8346-50D59F5D0065</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_expediente" id="A57A8795-76E3-1B83-7FE1-00E700A7D7E0">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>B5B37BB2-0F96-23D5-32B3-2234F1A77680</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut_paciente" id="10B22D51-2596-7537-3813-A5C8A184B6C1">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>6AD505AE-EEF2-E6E0-B1FF-B4755E516593</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="digitalizacion" id="DBB8115B-D7BF-7687-97A9-DF2DE968850D">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>F28BA238-7622-3A8A-36F3-284C2CBF8BF5</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_reserva" id="5365195E-6298-A06D-949E-57764B859002">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>8F50B613-BDE7-A443-03E8-93E1C12E7948</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B590019-436E-152E-F9BE-A697D8D03E25" referredColumn="C7B324A3-950D-0A04-AE66-20B883507172"/>
+</associations>
+</Column>
+<Column name="id_registro_archivado" id="F26DC72D-9B80-F36F-1A5E-30D3FEAD3572">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>1405492C-62C1-2405-7D65-0E3B9AA92E5E</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="71D278C0-A00C-9DAD-1F69-07CE37FE09F8" referredColumn="609309F5-1741-4B84-E840-98852BB1782C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D3FA2BB-B58A-B97F-42DB-14DAA05ED1B0" name="EXPEDIENTE_HOSPITALIZACION_PK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>A9E5BB9D-49C7-EB20-113F-FB609EB7C22B</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="316316D3-BD56-FE57-DBCF-A39BBA79D860"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94D28C4A-7F48-23FC-6853-A05BD970145E" name="EXPEDIENTE_HOSPITALIZACION__IDX">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>0A8F7271-D902-DFEC-9CEC-063652202807</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="5365195E-6298-A06D-949E-57764B859002"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E5D9B17-8380-2E10-3F29-09F485AC9A4B" name="EXPEDIENTE_HOSPITALIZACION__IDXv1">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>FF2B8913-F79A-ABD7-D46C-52B5728F1B17</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="F26DC72D-9B80-F36F-1A5E-30D3FEAD3572"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6AD0621A-AC9D-429F-A5B7-5A98CF9A7B75" name="EXPEDIENTE_HOSPITALIZACION_RESERVA_ATENCION_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>0A8F7271-D902-DFEC-9CEC-063652202807</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5365195E-6298-A06D-949E-57764B859002"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A4A70B4-4D1D-7A9E-FB48-7DE799D0B729" name="EXPEDIENTE_HOSPITALIZACION_REGISTRO_ARCHIVADO_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>FF2B8913-F79A-ABD7-D46C-52B5728F1B17</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F26DC72D-9B80-F36F-1A5E-30D3FEAD3572"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

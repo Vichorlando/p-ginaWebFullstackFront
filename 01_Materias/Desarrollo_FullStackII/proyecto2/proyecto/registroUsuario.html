@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario | KatEye</title>
+        <link rel="stylesheet" href="css/main.css">
+    <!-- Google Fonts: Playfair Display & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom Design Tokens -->
+    <link rel="stylesheet" href="css/design-tokens.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white text-center py-3">
+                        <h1 class="h3 mb-0">Registro de Usuario</h1>
+                    </div>
+                    <div class="card-body p-4 p-md-5">
+                        <form id="form-registro" novalidate>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label for="nombreCompleto" class="form-label">Nombre Completo</label>
+                                    <input type="text" id="nombreCompleto" class="form-control">
+                                    <div class="invalid-feedback" id="error-nombreCompleto"></div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="correo" class="form-label">Correo</label>
+                                    <input type="email" id="correo" class="form-control" placeholder="nombre@ejemplo.com">
+                                    <div class="invalid-feedback" id="error-correo"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="password" class="form-label">Contraseña</label>
+                                    <input type="password" id="password" class="form-control">
+                                    <div class="invalid-feedback" id="error-password"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+                                    <input type="password" id="confirmPassword" class="form-control">
+                                    <div class="invalid-feedback" id="error-confirmPassword"></div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="telefono" class="form-label">Teléfono <span class="text-muted">(Opcional)</span></label>
+                                    <input type="tel" id="telefono" class="form-control">
+                                </div>
+                                 <div class="col-md-6">
+                                    <label for="region" class="form-label">Región</label>
+                                    <select id="region" class="form-select">
+                                        <option value="">Selecciona una región...</option>
+                                        <option value="arica">Arica y Parinacota</option>
+                                        <option value="tarapaca">Tarapacá</option>
+                                        <option value="antofagasta">Antofagasta</option>
+                                        <option value="atacama">Atacama</option>
+                                        <option value="coquimbo">Coquimbo</option>
+                                        <option value="valparaiso">Valparaíso</option>
+                                        <option value="metropolitana">Metropolitana de Santiago</option>
+                                        <option value="ohiggins">O'Higgins</option>
+                                        <option value="maule">Maule</option>
+                                        <option value="nuble">Ñuble</option>
+                                        <option value="biobio">Biobío</option>
+                                        <option value="araucania">La Araucanía</option>
+                                        <option value="rios">Los Ríos</option>
+                                        <option value="lagos">Los Lagos</option>
+                                        <option value="aysen">Aysén</option>
+                                        <option value="magallanes">Magallanes</option>
+                                    </select>
+                                     <div class="invalid-feedback" id="error-region"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="comuna" class="form-label">Comuna</label>
+                                    <select id="comuna" class="form-select">
+                                        <option value="">Selecciona una comuna...</option>
+                                    </select>
+                                    <div class="invalid-feedback" id="error-comuna"></div>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">Registrar</button>
+                            </div>
+                        </form>
+                        <div class="alert alert-success mt-4" id="mensaje-form" hidden></div>
+                         <p class="text-center mt-3">¿Ya tienes una cuenta? <a href="iniciarSesion.html">Inicia sesión</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="js/loadComponents.js"></script>
+    <script src="js/validaciones.js"></script>
+</body>
+
+</html>

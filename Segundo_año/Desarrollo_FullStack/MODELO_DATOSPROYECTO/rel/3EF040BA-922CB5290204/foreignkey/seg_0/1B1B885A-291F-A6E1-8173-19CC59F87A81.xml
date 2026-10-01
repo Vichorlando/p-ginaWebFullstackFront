@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1B1B885A-291F-A6E1-8173-19CC59F87A81" containerWithKeyObject="977DB15E-2807-D55C-7AFE-F777DE4D5967" localFKIndex="3764EE89-3A54-7588-29BB-38809F2AF821" name="FICHA_CLINICA_ESTANTE_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>4C4CB455-20E3-1D58-ED84-02DB4D98BB06</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<referredTableLongName>ESTANTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>953DB7F5-C8C0-D4A3-5CCF-9209F6B40C7D</referredTableID>
+<keyObject>BC981694-2B80-2CE9-6F5F-D31ECFDD8AEC</keyObject>
+<referredKeyID>BC981694-2B80-2CE9-6F5F-D31ECFDD8AEC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_estande</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

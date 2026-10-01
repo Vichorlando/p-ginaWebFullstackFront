@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E5F63797-27ED-40DD-39BB-07A421814647" containerWithKeyObject="6946547B-D594-9D0A-1FA6-333A2CB33927" localFKIndex="CC91C257-0D3F-D771-D0C9-CC90EC4270A5" name="Relation_24_AUDITORIA_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>8486838C-1578-A4C8-45F2-B528C8381AFD</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<referredTableLongName>AUDITORIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>527D134E-8405-CDD3-E50B-24C813A14B0E</referredTableID>
+<keyObject>F8304641-956B-3407-C2D8-D9AE93DC0739</keyObject>
+<referredKeyID>F8304641-956B-3407-C2D8-D9AE93DC0739</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_auditoria</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

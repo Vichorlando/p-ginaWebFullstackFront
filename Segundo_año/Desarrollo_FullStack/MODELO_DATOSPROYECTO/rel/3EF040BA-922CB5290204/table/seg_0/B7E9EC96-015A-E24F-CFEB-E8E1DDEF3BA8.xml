@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7E9EC96-015A-E24F-CFEB-E8E1DDEF3BA8" name="PRESTAMO">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>FAFEECA4-0F13-A9D9-9624-D99B925BB125</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_administrativo" id="6355499E-972D-1B9F-78A1-5301BA505519">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>B28DA8DE-FFBE-F3B2-D809-580E2A67A613</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AED5FAC6-9563-2F5B-E854-2198B6D934BB" referredColumn="BD4571D5-8D85-4965-BBB9-D0EBE83EE761"/>
+</associations>
+</Column>
+<Column name="id_prestamo" id="6B0FB043-7D2D-861E-20F7-0684C6EF2FFD">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>B5EFD455-1AEC-6E18-5CF4-972AFFC4A155</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num_prestamo" id="C2257629-882D-DC61-2689-A263EF1399D4">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>41A8FB11-1099-61EA-BB24-869C6F316B05</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_solicitud" id="F9DB95B8-CEDD-3439-E72F-32F47B569B8F">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>CBD82C1B-2AD0-B0B1-3F1E-CF1FC9CD7757</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_prestamo_ficha" id="61AF3906-38C5-A098-0260-480C008FD5A7">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>4EF28208-6A42-8D3B-3CED-E7EB57A6C503</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pnombre" id="CD2FD0A8-3B8C-B60D-8E77-489F076BEF9B">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>478197BD-E401-48A5-5B30-312925ED4C68</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="appaterno" id="374050DE-D056-6817-65B4-7C23E707566B">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>0DDDBDFB-58B6-E4A7-EAF2-02C41DBA166A</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="folio_ficha" id="B5185E85-57A2-B872-D176-D7A2AD83055F">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>444277CD-C161-2756-5FD4-BD44FCAB5354</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BD2E467-2D47-E0FF-FB6F-337BA7DC4860" referredColumn="65878D8D-9AE9-DA08-EC1D-FEF2B96EC79A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="024BFE37-2DF0-8E3B-0FC5-4D81A0FBAA79" name="PRESTAMO_PK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>D220DD91-3BA3-C057-6435-2DC8EBFC2C0C</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6355499E-972D-1B9F-78A1-5301BA505519"/>
+<colUsage columnID="6B0FB043-7D2D-861E-20F7-0684C6EF2FFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B71DF8B3-5A06-0347-F924-E1BEB740C4EA" name="PRESTAMO_ADMINISTRATIVO_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>6A661410-719B-43DE-8F82-7587201219F2</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6355499E-972D-1B9F-78A1-5301BA505519"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97C5565E-F919-C955-18FD-FA71E6732C73" name="PRESTAMO_FICHA_CLINICA_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>1DA4CA2C-7BAB-78EE-3CB2-F01F3E76AF9F</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5185E85-57A2-B872-D176-D7A2AD83055F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

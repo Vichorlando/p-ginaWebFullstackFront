@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DE4C0F78-032F-9B62-DD2D-6B797EF2B6E5" containerWithKeyObject="609A492F-BA67-B66E-D4D7-9FA5FFF2A328" localFKIndex="43F96444-3DCB-1117-AB8F-FA74815F3D9D" name="REGISTRO_ARCHIVADO_EXPEDIENTE_HOSPITALIZACION_FK">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-07 17:00:12 UTC</createdTime>
+<generatorID>FF2B8913-F79A-ABD7-D46C-52B5728F1B17</generatorID>
+<ownerDesignName>MODELO_DATOSPROYECTO</ownerDesignName>
+<referredTableLongName>EXPEDIENTE_HOSPITALIZACION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>14EADC1E-559C-64A7-B962-5E08363E5934</referredTableID>
+<keyObject>2D3FA2BB-B58A-B97F-42DB-14DAA05ED1B0</keyObject>
+<referredKeyID>2D3FA2BB-B58A-B97F-42DB-14DAA05ED1B0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_expediente</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

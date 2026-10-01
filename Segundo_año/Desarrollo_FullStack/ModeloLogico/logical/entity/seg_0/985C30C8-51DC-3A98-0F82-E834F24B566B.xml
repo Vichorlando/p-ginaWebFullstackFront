@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="985C30C8-51DC-3A98-0F82-E834F24B566B" name="REGISTRO_INGRESO_ARCHIVO">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 22:58:37 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_registro_ingreso" id="E8C426E2-4DE5-09B6-2F34-BEF4093BECBD">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:55:48 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="folio_ficha" id="E76FA35A-CB4C-4D44-3DDA-6F1844BDF892">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:02:01 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_ingreso" id="A6CF51E2-FE9A-A510-C6C7-0AFD7FF5B8C4">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:02:50 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_expediente" id="D925945B-22A9-2F03-B26A-4AAFB2771C98">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:03:03 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_expediente" id="6C224969-7333-D2FD-4D20-7EC54E62D33A">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:13:07 UTC</createdTime>
+<generatorID>5E9C474F-C8D5-ADA8-F327-EA8910BBBE2D</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<referedAttribute>C863845B-6D91-B393-8346-50D59F5D0065</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_administrativo" id="A17B9BFD-4952-79B2-06CE-12BEBB02CB79">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:16:07 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_administrativo1" id="36CE07EA-790E-5DF9-07B3-4F6B7EF0A807">
+<createdBy>benja</createdBy>
+<createdTime>2026-05-06 23:41:43 UTC</createdTime>
+<generatorID>DD68D17C-1014-510C-4771-9AA0CE5DF8EB</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<referedAttribute>8E68DA0A-A154-0920-8711-E0B358986C17</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B26AA8ED-1592-1BE9-D81E-0792834BCA21" name="REGISTRO_INGRESO PK">
+<createdBy>benja</createdBy>
+<createdTime>2026-04-27 23:02:46 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="3EF040BA-7669-B8AC-8E82-922CB5290204" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E8C426E2-4DE5-09B6-2F34-BEF4093BECBD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
