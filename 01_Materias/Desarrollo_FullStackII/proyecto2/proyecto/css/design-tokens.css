@@ -80,6 +80,14 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .navbar-brand {
     color: #333333 !important;
     font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar .navbar-brand img {
+    max-height: 38px;
+    width: auto;
+    object-fit: contain;
 }
 
 .navbar .nav-link {
