@@ -70,73 +70,68 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script src="js/admin.js"></script>
-    <script>
-        /* Mismo catálogo de producto.js / detalleProductos.js.
-           Idealmente compartir en js/data.js */
-        const IMG_PLACEHOLDER = "data:image/svg+xml;utf8," + encodeURIComponent(
-            '<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88">' +
-            '<rect width="100%" height="100%" fill="#e9e4f5"/></svg>'
+    <script src="js/admin.js"></script>
+<script src="js/data.js"></script>
+<script>
+    // Copia local para poder eliminar sin tocar el catálogo compartido (PRODUCTOS es const)
+    let productosAdmin = [...PRODUCTOS];
+
+    const tbody = document.getElementById("tabla-productos");
+    const buscador = document.getElementById("buscar");
+    const sinResultados = document.getElementById("sin-resultados");
+    const contador = document.getElementById("contador");
+
+    const formatearPrecio = v => "$" + v.toLocaleString("es-CL");
+
+    function renderProductos() {
+        const q = buscador.value.trim().toLowerCase();
+        const lista = productosAdmin.filter(p =>
+            p.nombre.toLowerCase().includes(q) || p.categoria.toLowerCase().includes(q)
         );
 
-        let PRODUCTOS = [
-            { id: 1, nombre: "Aros Luna de Plata", precio: 12990, categoria: "Aros", imagen: "img/aros-luna.jpg" },
-            { id: 2, nombre: "Collar Gota Dorada", precio: 18990, categoria: "Collares", imagen: "img/collar-gota.jpg" },
-            { id: 3, nombre: "Pulsera Tejida", precio: 9990, categoria: "Pulseras", imagen: "img/pulsera-tejida.jpg" },
-            { id: 4, nombre: "Anillo Minimal", precio: 14990, categoria: "Anillos", imagen: "img/anillo-minimal.jpg" },
-            { id: 5, nombre: "Aros Círculo", precio: 7990, categoria: "Aros", imagen: "img/aros-circulo.jpg" },
-            { id: 6, nombre: "Collar Perlas", precio: 24990, categoria: "Collares", imagen: "img/collar-perlas.jpg" }
-        ];
+        tbody.innerHTML = lista.map(p => `
+            <tr>
+                <td>${p.id}</td>
+                <td><img class="tabla__miniatura" src="${p.imagenes[0]}" alt="${escapar(p.nombre)}"
+                         onerror="this.onerror=null;this.src='${IMG_PLACEHOLDER}'"></td>
+                <td>${escapar(p.nombre)}</td>
+                <td><span class="etiqueta">${escapar(p.categoria)}</span></td>
+                <td class="precio">${
+                    p.precioAnterior
+                        ? `<div class="precio-oferta">
+                               <span class="precio-anterior">${formatearPrecio(p.precioAnterior)}</span>
+                               <span class="precio-actual">${formatearPrecio(p.precio)}</span>
+                           </div>`
+                        : `<span class="precio-normal">${formatearPrecio(p.precio)}</span>`
+                }</td>
+                <td>
+                    <div class="btn-group btn-group-sm">
+                        <a class="btn btn-outline-secondary" href="productoForm.html?id=${p.id}">Editar</a>
+                        <button class="btn btn-outline-danger" data-eliminar="${p.id}">Eliminar</button>
+                    </div>
+                </td>
+            </tr>
+        `).join("");
 
-        const tbody = document.getElementById("tabla-productos");
-        const buscador = document.getElementById("buscar");
-        const sinResultados = document.getElementById("sin-resultados");
-        const contador = document.getElementById("contador");
+        sinResultados.hidden = lista.length > 0;
+        contador.textContent = `${lista.length} de ${productosAdmin.length} productos`;
+    }
 
-        const formatearPrecio = v => "$" + v.toLocaleString("es-CL");
+    buscador.addEventListener("input", renderProductos);
 
-        function renderProductos() {
-            const q = buscador.value.trim().toLowerCase();
-            const lista = PRODUCTOS.filter(p =>
-                p.nombre.toLowerCase().includes(q) || p.categoria.toLowerCase().includes(q)
-            );
-
-            tbody.innerHTML = lista.map(p => `
-                <tr>
-                    <td>${p.id}</td>
-                    <td><img class="tabla__miniatura" src="${p.imagen}" alt="${escapar(p.nombre)}"
-                             onerror="this.onerror=null;this.src='${IMG_PLACEHOLDER}'"></td>
-                    <td>${escapar(p.nombre)}</td>
-                    <td><span class="etiqueta">${escapar(p.categoria)}</span></td>
-                    <td class="precio">${formatearPrecio(p.precio)}</td>
-                    <td>
-                        <div class="btn-group btn-group-sm">
-                            <!-- Hipervínculo a la página para editar -->
-                            <a class="btn btn-outline-secondary" href="productoForm.html?id=${p.id}">Editar</a>
-                            <button class="btn btn-outline-danger" data-eliminar="${p.id}">Eliminar</button>
-                        </div>
-                    </td>
-                </tr>
-            `).join("");
-
-            sinResultados.hidden = lista.length > 0;
-            contador.textContent = `${lista.length} de ${PRODUCTOS.length} productos`;
+    tbody.addEventListener("click", e => {
+        const btn = e.target.closest("[data-eliminar]");
+        if (!btn) return;
+        const id = Number(btn.dataset.eliminar);
+        const p = productosAdmin.find(x => x.id === id);
+        if (p && confirm(`¿Eliminar "${p.nombre}"?`)) {
+            productosAdmin = productosAdmin.filter(x => x.id !== id);
+            renderProductos();
         }
+    });
 
-        buscador.addEventListener("input", renderProductos);
-
-        tbody.addEventListener("click", e => {
-            const btn = e.target.closest("[data-eliminar]");
-            if (!btn) return;
-            const id = Number(btn.dataset.eliminar);
-            const p = PRODUCTOS.find(x => x.id === id);
-            if (p && confirm(`¿Eliminar "${p.nombre}"?`)) {
-                PRODUCTOS = PRODUCTOS.filter(x => x.id !== id);
-                renderProductos();
-            }
-        });
-
-        renderProductos();
-    </script>
+    renderProductos();
+</script>
 </body>
 
 </html>

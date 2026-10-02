@@ -56,7 +56,7 @@ function renderProductos() {
                 </a>
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">${p.nombre}</h5>
-                    <p class="card-text h4 text-primary">${formatearPrecio(p.precio)}</p>
+                    <p class="card-text mb-0">${precioHTML(p)}</p>
                 </div>
                 <div class="card-footer bg-transparent border-top-0 pt-0">
                     <button class="btn btn-primary w-100 btn-agregar" data-id="${p.id}">${TEXTO_BOTON}</button>

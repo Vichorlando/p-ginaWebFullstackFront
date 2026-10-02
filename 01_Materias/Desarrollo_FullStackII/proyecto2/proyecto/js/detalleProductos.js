@@ -44,7 +44,7 @@ if (!producto) {
         <div class="col-md-6">
             <span class="badge bg-secondary mb-2">${producto.categoria}</span>
             <h1>${producto.nombre}</h1>
-            <p class="h2 text-primary mb-3" id="precio-unitario">${formatearPrecio(producto.precio)}</p>
+            <p class="mb-3" id="precio-unitario">${precioHTML(producto, "h2")}</p>
             <p class="lead">${producto.descripcion}</p>
 
             <!-- Selector de cantidad -->
@@ -148,7 +148,7 @@ if (relacionados.length > 0 && carrusel) {
                 </a>
                 <div class="card-body">
                     <h6 class="card-title"><a href="detalleProductos.html?id=${p.id}" class="text-decoration-none text-dark">${p.nombre}</a></h6>
-                    <p class="card-text text-primary">${formatearPrecio(p.precio)}</p>
+                    <p class="card-text mb-0">${precioHTML(p, "fs-6")}</p>
                 </div>
             </div>
         </div>

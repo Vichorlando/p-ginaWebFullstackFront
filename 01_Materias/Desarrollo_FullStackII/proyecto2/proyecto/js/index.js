@@ -3,6 +3,7 @@
 const TEXTO_BOTON_INDEX = "Agregar al carrito";
 const listaProductos = document.getElementById("lista-productos");
 
+/*Lista los producto con los descuentos*/
 function renderListaProductos() {
     listaProductos.innerHTML = PRODUCTOS.map(p => `
         <div class="card shadow-sm">
@@ -19,7 +20,7 @@ function renderListaProductos() {
                     </div>
                 </div>
                 <div class="col-md-3 p-3 text-center">
-                    <p class="h4 text-primary">${formatearPrecio(p.precio)}</p>
+                    <p class="card-text mb-0">${precioHTML(p)}</p> 
                     <button type="button" class="btn btn-primary w-100 mb-2 btn-agregar" data-id="${p.id}">${TEXTO_BOTON_INDEX}</button>
                     <a href="detalleProductos.html?id=${p.id}" class="btn btn-outline-primary w-100">Ver detalle</a>
                 </div>

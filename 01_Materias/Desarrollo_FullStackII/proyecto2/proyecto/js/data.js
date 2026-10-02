@@ -9,17 +9,17 @@ const IMG_PLACEHOLDER = "data:image/svg+xml;utf8," + encodeURIComponent(
 // Catálogo de productos cosméticos (las categorías del filtro salen de aquí)
 const PRODUCTOS = [
     {
-        id: 1, nombre: "Base Líquida Mate", precio: 12990, categoria: "Rostro",
+        id: 1, nombre: "Base Líquida Mate", precio: 12990, precioAnterior: 16990, categoria: "Rostro",
         imagenes: ["img/base-liquida-1.jpg", "img/base-liquida-2.jpg"],
         descripcion: "Base líquida de acabado mate y cobertura media, de textura ligera y buena duración durante el día."
     },
     {
-        id: 2, nombre: "Corrector Cremoso", precio: 8990, categoria: "Rostro",
+        id: 2, nombre: "Corrector Cremoso", precio: 8990, precioAnterior: 12990, categoria: "Rostro",
         imagenes: ["img/corrector-1.jpg", "img/corrector-2.jpg"],
         descripcion: "Corrector de textura cremosa para difuminar ojeras e imperfecciones con facilidad."
     },
     {
-        id: 3, nombre: "Delineador Líquido Negro", precio: 6990, categoria: "Ojos",
+        id: 3, nombre: "Delineador Líquido Negro", precio: 6990, precioAnterior: 9990, categoria: "Ojos",
         imagenes: ["img/delineador-1.jpg", "img/delineador-2.jpg"],
         descripcion: "Delineador de punta fina y trazo preciso, color negro intenso y secado rápido."
     },
@@ -54,3 +54,15 @@ const PRODUCTOS = [
         descripcion: "Set de brochas de cerdas suaves para rostro y ojos, con estuche de guardado."
     }
 ];
+
+function precioHTML(p, tamano = "h4") {
+    if (!p.precioAnterior || p.precioAnterior <= p.precio) {
+        return `<span class="${tamano} text-primary">${formatearPrecio(p.precio)}</span>`;
+    }
+    const descuento = Math.round((1 - p.precio / p.precioAnterior) * 100);
+    return `
+        <span class="text-muted text-decoration-line-through small">${formatearPrecio(p.precioAnterior)}</span>
+        <span class="${tamano} text-danger ms-1">${formatearPrecio(p.precio)}</span>
+        <span class="badge bg-danger ms-1">-${descuento}%</span>
+    `;
+}

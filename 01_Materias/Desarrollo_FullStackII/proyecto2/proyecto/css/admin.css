@@ -175,3 +175,25 @@ body.admin {
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
+
+
+/* ---------- Precios con descuento ---------- */
+.admin .precio-oferta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.admin .precio-anterior {
+  color: #6c757d;              /* #777 quedaba en 4.48:1; este cumple 4.5:1 */
+  text-decoration: line-through;
+  font-size: 0.85rem;
+}
+
+.admin .precio-actual {
+  color: #dc3545;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.admin .precio-normal { font-weight: 600; }

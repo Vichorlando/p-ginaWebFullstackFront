@@ -32,6 +32,7 @@ function obtenerCarrito() {
             id: p.id,
             nombre: p.nombre,
             precio: p.precio,
+            precioAnterior: p.precioAnterior > p.precio ? p.precioAnterior : null,
             imagen: p.imagenes[0],
             cantidad: Math.min(cantidad, MAX_UNIDADES_POR_PRODUCTO)
         });
@@ -111,7 +112,10 @@ function renderCarrito() {
                      onerror="this.onerror=null;this.src='${IMG_PLACEHOLDER}'">
                 <div class="flex-grow-1">
                     <h6 class="mb-1">${i.nombre}</h6>
-                    <p class="text-muted mb-1">${formatearPrecio(i.precio)}</p>
+                    <p class="${i.precioAnterior
+                        ? `<span class="text-muted text-decoration-line-through small me-1">${formatearPrecio(i.precioAnterior)}</span>
+                        <span class="text-danger fw-semibold">${formatearPrecio(i.precio)}</span>`
+                        : `<span class="text-muted">${formatearPrecio(i.precio)}</span>`}</p>
                     <div class="d-flex align-items-center">
                         <button class="btn btn-sm btn-outline-secondary" data-accion="menos" data-id="${i.id}">−</button>
                         <span class="mx-2">${i.cantidad}</span>
@@ -127,7 +131,9 @@ function renderCarrito() {
 
     const totalEl = document.getElementById("total-carrito");
     if(totalEl) totalEl.textContent = formatearPrecio(totalCarrito());
+    actualizarAhorroDOM();
 }
+
 
 /* ---------- INICIALIZACIÓN Y EVENTOS ---------- */
 function initCarritoEventListeners() {
@@ -161,4 +167,25 @@ function initCarritoEventListeners() {
     renderCarrito();
 }
 
+//Cuanto se ahorra en el carrito (suma de descuentos)
+function ahorroCarrito() {
+    return obtenerCarrito().reduce(
+        (acc, i) => acc + (i.precioAnterior ? (i.precioAnterior - i.precio) * i.cantidad : 0), 0); // acc = acumulador, i = item
+}
+
+function actualizarAhorroDOM() {
+    const totalAhorrado = ahorroCarrito();
+    const elemAhorro = document.getElementById('total-ahorro');
+    const contenedorAhorro = document.getElementById('contenedor-ahorro');
+
+    if (elemAhorro && contenedorAhorro) {
+        if (totalAhorrado > 0) {
+            elemAhorro.textContent = totalAhorrado.toLocaleString(); // Formatea el número
+            contenedorAhorro.classList.remove('d-none');
+            contenedorAhorro.style.display = 'flex'; // Muestra el contenedor si hay ahorro
+        } else {
+            contenedorAhorro.style.display = 'none'; // Oculta si no hay ahorro
+        }
+    }
+}
 document.addEventListener("DOMContentLoaded", initCarritoEventListeners);
