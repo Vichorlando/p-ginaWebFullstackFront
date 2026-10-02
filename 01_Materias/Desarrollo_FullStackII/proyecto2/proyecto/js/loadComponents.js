@@ -7,12 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
     cargarComponente('info-box-container', 'components/info-box.html', initInfoBox);
 });
 
-async function cargarComponente(id, ruta, callback) {
+//función para cargar un componente HTML en un contenedor dado
+async function cargarComponente(id, ruta, callback) { 
     const contenedor = document.getElementById(id);
     if (!contenedor) return; // esta página no usa este componente
 
     try {
-        const respuesta = await fetch(ruta);
+        const respuesta = await fetch(ruta); 
         if (!respuesta.ok) {
             throw new Error(`No se encontró ${ruta} (${respuesta.status})`);
         }
