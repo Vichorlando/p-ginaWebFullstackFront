@@ -27,7 +27,7 @@ function renderSidebar() {
        ${activo === clave ? 'aria-current="page"' : ""}>${icono(clave)}<span>${texto}</span></a>`;
 
   sidebar.innerHTML = `
-    <a class="sidebar__marca" href="home.html">KatEye<small>Administración</small></a>
+    <a class="sidebar__marca" href="home.html">Kateyes<small>Administración</small></a>
 
     <nav class="menu menu--principal nav flex-column" aria-label="Secciones">
       ${enlace("home", "home.html", "Panel principal")}

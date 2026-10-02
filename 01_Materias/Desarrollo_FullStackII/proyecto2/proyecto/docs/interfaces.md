@@ -10,8 +10,8 @@ La identidad visual se centraliza en este archivo, que personaliza Bootstrap.
 
 | Token | Valor | Rol | Variable de Bootstrap | 
 |---|---|---|---|
-| `--sage-green` | `#8A9A5B` | Primario (botones, enlaces, acentos) | `--bs-primary` |
-| `--dusty-rose` | `#C08081` | Secundario (botones, acentos) | `--bs-secondary` |
+| `--sage-green` | `#2E9E66` | Primario (botones, enlaces, acentos) | `--bs-primary` |
+| `--dusty-rose` | `#D9536F` | Secundario (botones, acentos) | `--bs-secondary` |
 | `--dark-charcoal` | `#36454F` | Texto principal | `--bs-body-color` |
 | `--off-white` | `#F8F6F4` | Fondo de página | `--bs-body-bg` |
 | `--soft-gold` | `#B8860B` | Acentos y precios (no es variable BS) | N/A |
