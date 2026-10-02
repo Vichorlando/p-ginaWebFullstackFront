@@ -63,7 +63,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
-    border: 1px solid #eee;
+    background-color: #F8F0E3;
+    border: 1px solid rgba(0, 0, 0, 0.06);
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
@@ -113,5 +114,57 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .dropdown-item:focus {
     background-color: #e5e5e5;
     color: #111111;
+}
+
+/* ---------- Hero / Bienvenida Inicio ---------- */
+.hero-bienvenida {
+    background-color: #E4C3A9;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* ---------- Panel de Filtros ---------- */
+.panel-filtros {
+    background-color: #E4C3A9;
+    border-color: rgba(0, 0, 0, 0.08) !important;
+    position: sticky;
+    top: 2rem;
+    z-index: 10;
+}
+
+/* ---------- Checkboxes y Radios ---------- */
+.form-check-input:checked {
+    background-color: #456B76 !important;
+    border-color: #456B76 !important;
+}
+
+.form-check-input:focus {
+    border-color: #456B76;
+    box-shadow: 0 0 0 0.25rem rgba(69, 107, 118, 0.25);
+}
+
+/* ---------- Formularios de Autenticación / Login ---------- */
+.card-auth {
+    background-color: #E4C3A9;
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+.card-auth .form-control {
+    background-color: #ffffff;
+}
+
+.card-auth a {
+    color: var(--bs-primary);
+    font-weight: 600;
+}
+
+/* ---------- Modal de Novedades / Info-box ---------- */
+#infoModal .modal-content {
+    background-color: #E4C3A9;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#infoModal .modal-header,
+#infoModal .modal-footer {
+    border-color: rgba(0, 0, 0, 0.08);
 }
 

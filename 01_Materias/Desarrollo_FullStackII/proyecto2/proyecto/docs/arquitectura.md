@@ -49,9 +49,9 @@ La arquitectura de CSS ha cambiado significativamente:
     -   Paleta de colores (`--sage-green`, `--dusty-rose`, etc.).
     -   Familias tipográficas (`--font-family-serif`, `--font-family-sans-serif`).
     -   **Overrides de variables de Bootstrap** (`--bs-primary`, `--bs-body-bg`, etc.) para que el framework use nuestros colores y fuentes por defecto.
--   **Archivos obsoletos:** `productos.css`, `carrito.css`, `detalleProductos.css` y `contacto.css` han sido vaciados. Sus estilos ahora provienen de Bootstrap y `design-tokens.css`.
--   **`main.css`:** Ha sido reducido drásticamente. Solo contiene estilos para las páginas de Blogs y Nosotros, que no fueron refactorizadas.
--   **`admin.css`:** Ha sido actualizado para usar las nuevas variables de `design-tokens.css`, unificando la estética con el sitio público.
+-   **Archivos obsoletos eliminados:** `productos.css`, `carrito.css`, `detalleProductos.css`, `contacto.css` y `home.css` fueron eliminados. Sus estilos y componentes son gestionados de forma centralizada por Bootstrap y `design-tokens.css`.
+-   **`main.css`:** Contiene estilos complementarios para las secciones de Blogs y Nosotros.
+-   **`admin.css`:** Estilos para el sidebar y mantenedores del panel de administración, unificados con las variables de `design-tokens.css`.
 
 ## 5. JavaScript
 

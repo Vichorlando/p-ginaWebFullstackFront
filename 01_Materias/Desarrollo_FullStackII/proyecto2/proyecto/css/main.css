@@ -5,7 +5,8 @@
 .recuadro {
     display: flex; gap: 1.5rem; align-items: center;
     max-width: 900px; margin: 0 auto 1.5rem; padding: 1rem;
-    background: #fff; border-radius: 0.5rem; box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    background: #F8F0E3; border-radius: 0.5rem; box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 .imagen-pequena { flex: 0 0 160px; }
 .imagen-pequena img { width: 100%; height: 120px; object-fit: cover; border-radius: 0.375rem; display: block; }
@@ -16,7 +17,7 @@
 .flecha-regreso { display: inline-block; margin: 1rem 2rem; font-size: 2rem; text-decoration: none; }
 .noticia { max-width: 800px; margin: 1rem auto 2rem; padding: 0 1rem; }
 .imagen-noticia img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 0.5rem; display: block; }
-.contenido-noticia { background: #fff; padding: 1.5rem; border-radius: 0.5rem; margin-top: 1rem; box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075); }
+.contenido-noticia { background: #F8F0E3; padding: 1.5rem; border-radius: 0.5rem; margin-top: 1rem; box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075); border: 1px solid rgba(0, 0, 0, 0.05); }
 .contenido-noticia h1 { margin-top: 0; }
 
 /* ---------- Nosotros ---------- */

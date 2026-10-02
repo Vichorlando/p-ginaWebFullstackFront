@@ -35,6 +35,16 @@ function updateCartCount() {
         total = carrito.reduce((acc, i) => acc + (Number(i.cantidad) || 0), 0);
     } catch (e) { /* carrito vacío */ }
     document.querySelectorAll('.cart-count').forEach(el => el.textContent = total);
+
+    const btnCarritoHeader = document.querySelector('.btn-header-carrito');
+    if (btnCarritoHeader) {
+        btnCarritoHeader.addEventListener('click', () => {
+            const panel = document.getElementById('panel-carrito');
+            if (!panel) {
+                window.location.href = 'productos.html';
+            }
+        });
+    }
 }
 
 function initInfoBox() {
